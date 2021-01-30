@@ -1,0 +1,12 @@
+.icon{
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    
+  }
+
+mat-list-item:nth-child(odd){
+  background-color:  #d2deef;
+  font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+  }

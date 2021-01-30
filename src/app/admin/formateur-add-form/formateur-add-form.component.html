@@ -1,0 +1,39 @@
+<section>
+  <form #formateurItemForm="ngForm" (ngSubmit)="addFormateur(formateurItemForm.value)">
+    <ul>
+      <li>
+        <header>
+            <h2>Ajouter un Formateur</h2>
+          </header>
+      </li>
+      <li>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Nom" name="nom" id="nom" ngModel required>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Prénom" name="prenom" id="prenom" ngModel required>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Adresse" name="Adresse" id="Adresse" ngModel required>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email" name="Email" id="Email" ngModel required>
+        </mat-form-field>
+      </li>
+      <li>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Domaine D'expertise" name="Domaine" id="Domaine" ngModel required>
+        </mat-form-field>
+      </li>
+   <li>
+    <button type="submit" [disabled]="!formateurItemForm.form.valid">Enregistrer</button>
+</li>
+</ul>
+  </form>
+</section>

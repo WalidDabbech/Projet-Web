@@ -1,0 +1,44 @@
+<section>
+    <form #participantItemForm="ngForm" (ngSubmit)="addparticipant(participantItemForm.value)">
+      <ul>
+        <li>
+          <header>
+              <h2>Ajouter un Participant</h2>
+            </header>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Nom" name="nom" id="nom" ngModel required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Prénom" name="prenom" id="prenom" ngModel required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Adresse" name="Adresse" id="Adresse" ngModel required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" name="Email" id="Email" ngModel required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Societe" name="Societe" id="Societe" ngModel required>
+          </mat-form-field>
+        </li>
+        <li>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Poste" name="Poste" id="Poste" ngModel required>
+            </mat-form-field>
+          </li>
+     <li>
+      <button type="submit" [disabled]="!participantItemForm.form.valid">Enregistrer</button>
+  </li>
+  </ul>
+    </form>
+  </section>

@@ -1,0 +1,41 @@
+
+<section>
+  <mat-toolbar>
+    <img src="../assets/Admin Espace.jpg" width="60" >
+    <span>Espace Admin</span>
+  </mat-toolbar>
+  <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+      <mat-list>
+        <mat-list-item>  
+          <img src="../assets/Chercher.png" width="40" > 
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Chercher Session" value="">
+            </mat-form-field>
+          </form>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <img src="../assets/Dashboard.png" width="40" >
+          <a routerLink="/dashboard" style="color: White;">Dashboard</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> <img src="../assets/Sessions.png" width="40" >
+          <a routerLink="/admin/list" style="color: White;">Sessions</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <img src="../assets/formateur.png" width="45" >
+          <a routerLink="/formateurs" style="color: White;">Formateurs</a>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <img src="../assets/Participants.png" width="45" >
+          <a routerLink="/participants" style="color: White;">Participants</a>
+        </mat-list-item>
+      </mat-list>
+    </mat-drawer>
+    <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+  </mat-drawer-container>
+</section>

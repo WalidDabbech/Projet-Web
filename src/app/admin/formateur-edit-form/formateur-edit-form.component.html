@@ -1,0 +1,40 @@
+<section>
+    <form #formateurItemForm="ngForm" (ngSubmit)="editFormateur(formateurItemForm.value)">
+      <ul>
+        <li>
+          <header>
+              <h2>Modifier un Formateur</h2>
+            </header>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Nom" name="nom" id="nom"  [(ngModel)]="formateur.nom" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Prénom" name="prenom" id="prenom"  [(ngModel)]="formateur.prenom" required>
+              
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Adresse" name="Adresse" id="Adresse"  [(ngModel)]="formateur.Adress" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Email" name="Email" id="Email" [(ngModel)]="formateur.Email" required>
+          </mat-form-field>
+        </li>
+        <li>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="Domaine D'expertise" name="Domaine" id="Domaine"  [(ngModel)]="formateur.Domaine" required>
+          </mat-form-field>
+        </li>
+     <li>
+      <button type="submit" [disabled]="!formateurItemForm.form.valid">Modifier</button>
+  </li>
+  </ul>
+    </form>
+  </section>

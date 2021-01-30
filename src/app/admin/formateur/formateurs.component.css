@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 90vh;
+  }
+  section {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0px;
+  }
+mat-list{
+  width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+}
+.mat-divider{
+    background-color:rgb(255, 255, 255); 
+    height: 3px;   
+}
+.mat-list-item:nth-child(odd){
+background-color:  #d2deef;
+font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+}
+.mat-list-item:nth-child(even){
+  background-color:#eaeff7;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+}
+h2{
+  background-color: #4472c4;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3px;
+  text-align: center;
+  color: white;
+}
+a>img {
+  margin-top: 50px;
+  margin-left: 50px
+}
+

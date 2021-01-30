@@ -1,0 +1,9 @@
+<section>
+    <a routerLink="/addparticipant"> <img src='../../../assets/Ajouter.png' width="40px"></a>
+    <img src='../../../assets/Actualiser.png' (click)="refreshPage()" width="40px">
+    <mat-list>
+      <h2>Liste Des Participants</h2>
+      <app-participan-item *ngFor="let participantItem of participantItems" [participant]="participantItem" ></app-participan-item>
+      </mat-list>
+  </section>
+  
